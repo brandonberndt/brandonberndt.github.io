@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Shovelaware: Be aware of Shovelware</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/arrows.css" />
+	<style>
+
+	/* Style for header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: white;
+		margin:0;
+		padding:0;
+	}
+
+	.intro p{
+		color: white;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	#section0,
+	#section1,
+	#section2,
+	#section3,
+	#section4,
+	#section5{
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+	}
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(images/shovelawarelanding3.jpg);
+		padding: 0% 0 0 0;
+	}
+	#section1{
+		background-image: url(images/shovelwarepanel2.jpg);
+		padding: 0% 0 0 0;
+	}
+	#section2{
+		background-image: url(images/freepanel2.png);
+		padding: 0% 0 0 0;
+	}
+	#section3{
+		background-image: url(images/cloningpanel2.png);
+		padding: 0% 0 0 0;
+	}
+	#section4{
+		background-image: url(images/micropanel2.png);
+		padding: 0% 0 0 0;
+	}
+	
+
+	 	/*Shovelware
+	* --------------------------------------- */
+	#slide1a{
+		background-image: url();
+		padding: 0% 0 0 0;
+	}
+	#slide1b{
+		background-image: url(images/shovelwareslide1.jpg);
+		padding: 0% 0 0 0;
+	}
+	#slide1c{
+		background-image: url(images/shovelwareslide2.jpg);
+		padding: 0% 0 0 0;
+	}
+	#slide1d{
+		background-image: url(images/shovelwareslide3.jpg);
+		padding: 0% 0 0 0;
+	}
+	#slide1e{
+		background-image: url(images/shovelwareslide4.jpg);
+		padding: 0% 0 0 0;
+	}
+	/* Free to play
+	* --------------------------------------- */
+	#slide2a{
+		background-image: url();
+		padding: 0% 0 0 0;
+	}
+	#slide2b{
+		background-image: url(images/freeslide4.jpg);
+		padding: 0% 0 0 0;
+	}
+	#slide2c{
+		background-image: url(images/freeslide2.jpg);
+		padding: 0% 0 0 0;
+	}
+	#slide2d{
+		background-image: url(images/freeslide5.jpg);
+		padding: 0% 0 0 0;
+	}
+	#slide2e{
+		background-image: url(images/freeslide3.jpg);
+		padding: 0% 0 0 0;
+	}
+	/* Game Cloning
+	* --------------------------------------- */
+	#slide3a{
+		background-image: url();
+		padding: 0% 0 0 0;
+	}
+	#slide3b{
+		background-image: url(images/cloningslide4.jpg);
+		padding: 0% 0 0 0;
+	}
+	#slide3c{
+		background-image: url(images/cloningslide1.jpg);
+		padding: 0% 0 0 0;
+	}
+	#slide3d{
+		background-image: url(images/blankpanel3.jpg);
+		padding: 0% 0 0 0;
+	}
+	#slide3e{
+		background-image: url(images/blankpanel3.jpg);
+		padding: 0% 0 0 0;
+	}
+	#slide3f{
+		background-image: url(images/blankpanel3.jpg);
+		padding: 0% 0 0 0;
+	}
+	/* Microtransactions
+	* --------------------------------------- */
+	#slide4a{
+		background-image: url();
+		padding: 0% 0 0 0;
+	}
+	#slide4b{
+		background-image: url(images/microslide4.jpg);
+		padding: 0% 0 0 0;
+	}
+	#slide4c{
+		background-image: url(images/microslide2.jpg);
+		padding: 0% 0 0 0;
+	}
+	#slide4d{
+		background-image: url(images/microslide3.jpg);
+		padding: 0% 0 0 0;
+	}
+	#slide4e{
+		background-image: url(images/blankpanel4.jpg);
+		padding: 0% 0 0 0;
+	}
+	
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header{
+		position:fixed;
+		height: 10%;
+		display:block;
+		width: 100%;
+		background: white;
+		z-index:9;
+		text-align:center;
+		font-family: 'Hammersmith One';
+		font-size: 40px;
+		color: black;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+	#footer{
+		position:fixed;
+		bottom:0px;
+	}
+
+
+	</style>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage','4thPage','5thPage','6thPage'],
+				sectionsColor: ['', '#E66851', '#85DAEF','#71DB9D','#F89846'],
+				css3: true
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<div id="header"><a style="text-decoration:none; color:black;"></div>
+
+	<a class="aboutbutton"><a href="about.html" class="aboutbutton"><img src="images/aboutbutton3.png" alt="about button"></div>
+	<nav>
+		<ul id="menu">
+			<li data-menuanchor="firstPage"><a href="#firstPage"><div id="logo" class="navbutton" id="topbutton"><img src="images/shovelawarelogo2.png" img style="height:; width:334px; max-width:50%; max-height:50%;" alt="shovelaware logo"></a></li>
+			<li data-menuanchor="secondPage"><a href="#secondPage"><div class="navbutton" id="shovelwarebutton"><img src="images/shovelwarebutton3.png" alt="SHOVELWARE"><span style="width:100px; height:100px;"></span></a></li>
+			<li data-menuanchor="3rdPage"><a href="#3rdPage"><div class="navbutton" id="freebutton"><img src="images/freebutton3.png" alt="FREE TO PLAY"><span style="width:100px; height:100px;"></span></a></li>
+			<li data-menuanchor="4thpage"><a href="#4thPage"><div class="navbutton" id="cloningbutton"><img src="images/cloningbutton3.png" alt="GAME CLONING"><span style="width:100px; height:100px;"></span></a></li>
+			<li data-menuanchor="5thpage"><a href="#5thPage"><div class="navbutton" id="microbutton"><img src="images/microbutton3.png" alt="MICROTRANSACTIONS"><span style="width:100px; height:;"></span></a></li>
+			
+		</ul>
+	</nav>
+
+
+	<div id="fullpage">
+	
+	<div class="section " id="section0">
+	
+	</div>
+
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1a">
+			<div>
+				<h1></h1>
+			</div>
+		</div>
+		<div class="slide" id="slide1b">
+			<h1 class="subheader"></h1>
+			<p class="description"></p>
+		</div>
+		<div class="slide" id="slide1c">
+			<h1></h1>
+			
+			
+		</div>
+		<div class="slide" id="slide1d">
+			<h1 class="subheader"></h1>
+		</div>
+		<div class="slide" id="slide1e">
+			<h1 class="subheader"></h1>
+		</div>
+	</div>
+	<div class="section" id="section2">
+	    <div class="slide" id="slide2a">
+			<div>
+				<h1></h1>
+			</div>
+		</div>
+		<div class="slide" id="slide2b">
+			
+		</div>
+		<div class="slide" id="slide2c">
+			
+		</div>
+		<div class="slide" id="slide2d">
+			
+		</div>
+		<div class="slide" id="slide2e">
+			
+		</div>
+	</div>
+	<div class="section" id="section3">
+	    <div class="slide" id="slide3a">
+			<div>
+				<h1></h1>
+			</div>
+		</div>
+		<div class="slide" id="slide3b">
+			<h1 class="subheader"><span style="color:white"></style></h1>
+			
+		</div>
+		<div class="slide" id="slide3c">
+			<h1 class="subheader"></h1>
+			
+		</div>
+		<div class="slide" id="slide3d">
+			<h1></h1>
+			<p>Many mobile games currently on the market use similar gameplay mechanics. If you play mobile games, chances are you have played several games with similar if not the exact same gameplay. </p>
+		</div>
+		<div class="slide" id="slide3e">
+			<h1 class="subheader"></h1>
+			<img id="mobilemap" src="images/mobilemap.png" alt="mobilemap" style="max-width:; max-height:";>
+		</div>
+		<div class="slide" id="slide3f">
+			<h1 class="subheader"><span style="color:white">Quality over Quantity</h1>
+			
+			<p>Success in the gaming industry is sought after by many but difficult to achieve. When a title is released that finds widespread success, imitators are certain to follow. With the rise of game cloning within the mobile industry, there has been stagnation and a lack of innovation in the games on mobile platforms. Although there are standouts every so often, there will no doubt be imitations.</p>
+		</div>
+	</div>
+	<div class="section" id="section4">
+	    <div class="slide" id="slide4a">
+			<div>
+			</div>
+		</div>
+		<div class="slide" id="slide4b">
+			
+		</div>
+		<div class="slide" id="slide4c">
+			
+		</div>
+		<div class="slide" id="slide4d">
+			
+		</div>
+		<div class="slide" id="slide4e">
+			<h1 class="subheader"></h1>
+			<p>When used properly, microtransactions can be a way in which both the players and developers can benefit. There are many games out on the mobile market that use microtransactions as a way to take advantage of players and limit their play at a cost.</p>
+			<p>BE AWARE of what costs are associated with a game before you invest time into it.</p>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+</body>
+</html>

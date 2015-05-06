@@ -1,0 +1,21 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+.fp-controlArrow {
+    position: absolute;
+    width: 100px !important; 
+    height: 195px !important;
+    margin-top:-97.5px; /* This value must always be half of the height - This does the same as above */
+    z-index: 100;
+    top: 50%;
+    cursor: pointer;
+}
+
+.fp-controlArrow.fp-prev {
+    left:15px;
+    background: url(../images/leftbutton2.png) no-repeat;
+}
+.fp-controlArrow.fp-next {
+    right:15px;
+    background: url(../images/rightbutton2.png) no-repeat;
+}

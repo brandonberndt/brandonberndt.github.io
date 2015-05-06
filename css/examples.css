@@ -1,0 +1,447 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'HammersmithOne';
+    src: url(../fonts/'HammersmithOne.ttf');
+    src: url(../fonts/'hammersmithone-webfont.eot');
+    src: url(../fonts/'hammersmithone-webfont.eot?#iefix') format('embedded-opentype'),
+         url(../fonts/'hammersmithone-webfont.woff2') format('woff2'),
+         url(../fonts/'hammersmithone-webfont.woff') format('woff'),
+         url(../fonts/'hammersmithone-webfont.ttf') format('truetype'),
+         url(../fonts/'hammersmithone-webfont.svg#hammersmith_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+   font-family: 'Impact';
+    src: url(../fonts/'impact-webfont.eot');
+    src: url(../fonts/'impact-webfont.eot?#iefix') format('embedded-opentype'),
+         url(../fonts/'impact-webfont.woff2') format('woff2'),
+         url(../fonts/'impact-webfont.woff') format('woff'),
+         url(../fonts/'impact-webfont.ttf') format('truetype'),
+         url(../fonts/'impact-webfont.svg#impactregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'arimoregular';
+    src: url(../fonts/'arimo-regular-webfont.eot');
+    src: url(../fonts/'arimo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url(../fonts/'arimo-regular-webfont.woff2') format('woff2'),
+         url(../fonts/'arimo-regular-webfont.woff') format('woff'),
+         url(../fonts/'arimo-regular-webfont.ttf') format('truetype'),
+         url(../fonts/'arimo-regular-webfont.svg#arimoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+    font-family: 'GillSans';
+    src: url(../fonts/'GillSansMT.ttf');
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+
+a:visited{
+	text-decoration:none;
+	color:black;
+
+}
+a:hover{
+	color: #BC282E;
+}
+
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:10px;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-family: 'GillSans', 'arimoregular', san-serif;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+body{
+	font-family: arial,'arimoregular';
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+
+.aboutbutton{
+	position:absolute;
+	float:right;
+	width:142px;
+	height:58px;
+	display:inline;
+	top:3%;
+	left:90%;
+	margin:;
+	z-index: 10;
+}
+
+.navbutton{
+	position:relative;
+	display:inline;
+	top:;
+	left:200px;
+	padding:;
+	margin:20px;
+	z-index: 10;
+}
+
+#shovelwarebutton{
+	width:238px;
+	height:58px;
+}
+
+#freebutton{
+	width:221px;
+	height:58px;
+}
+
+#cloningbutton{
+	width:250px;
+	height:58px;
+}
+
+#microbutton{
+	width:322px;
+	height:58px;
+}
+
+.aboutheader{
+	position:fixed;
+	display:inline-block;
+	margin:20px;
+	padding:10px;
+	top:25%;
+	left:0%;
+	font-size: 3em;
+	font-family: 'HammersmithOne', 'arimoregular', san-serif;
+	text-align: right;
+}
+
+h1.subheader{
+	position:relative;
+	color:white;
+	font-family: 'GillSans', 'arimoregular', san-serif;
+	font-size:4em;
+	top:-25%;
+}
+
+h1{
+	font-size: 6em;
+}
+
+.exampleimage{
+	position:fixed;
+	color:white;
+	top:;
+	right:;
+	z-index:12;
+	height:200px;
+	width:200px;
+
+}
+
+p.infoparagraph{
+	font-family: 'GillSans', 'arimoregular', san-serif;
+	position:relative;
+	top:300px;
+	right:300px;
+	font-size: 32;
+	text-align: left;
+	width:700px;
+	color:white;
+}
+
+p.description{
+	font-family: 'GillSans', 'arimoregular', san-serif;
+	position:relative;
+	top:;
+	right:;
+	font-size: 1em;
+	text-align: center;
+	width:600px;
+	color:white;
+}
+
+p.aboutparagraph{
+	font-family: 'GillSans', Arial, san-serif;
+	position:relative;
+	top:325px;
+	right:1475px;
+	font-size: 1em;
+	text-align: left;
+	width:500px;
+	color:white;
+}
+
+p{
+	font-size: 2em;
+	font-family: 'GillSans', Arial, san-serif;
+	text-align:center-justify;
+	width:50%;
+	color:white;
+}
+
+.slide p{
+	font-size: 2em;
+	font-family: 'GillSans', Arial, san-serif;
+	display:inline-block;
+	padding:10px;
+	position:relative;
+	text-align:center-justify;
+	max-width:50%;
+	color:white;
+}
+
+#aboutinfo h1{
+	background-color:white;
+	width:50%; 
+	margin:0; 
+	color: #BC282E;
+}
+
+#aboutinfo{
+	font-family: 'GillSans', Arial, san-serif;
+	position:relative;
+	margin:;
+	z-index:70;
+	width:;
+	height:;
+	top:;
+}
+.intro p{
+	font-family: 'GillSans', Arial, san-serif;
+	width: 100%;
+	padding:0.25em;
+	margin: 0 auto;
+	font-size: 2em;
+}
+.section{
+	text-align:center;
+}
+
+#logo{
+	position:fixed;
+	float:left;
+	margin:0 auto;
+	padding:0;
+	height:146px;
+	width:334px;
+	max-height:50%;
+	max-width:50%;
+	left:2%;
+	top:2%;
+	z-index:10;
+}
+
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: white;
+}
+#menu li:hover{
+	color: white;
+}
+#menu li a,
+#menu li.active a{
+	
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:relative;
+	top:;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+#footer{
+	width:100%;
+	z-index:10;
+}
+
+#upper {
+    position: relative;
+}
+
+#lower {
+    width: 100%;
+    color:white;
+    position: absolute;
+    bottom: 0;
+}
+
+#bar {
+	background-color:white;
+	color:#BC282E;
+	font-family: 'GillSans','arimoregular',san-serif;
+	width:100%;
+    padding: 10px;
+}
+
+#panel {
+    display: none;
+    color:white;
+	height: 800px;
+    background-color: #BC282E;
+    padding: 10px;
+}
+
+.panellinks{
+	position:relative;
+	color:white;
+	text-align: left;
+	width:400px;
+}
+
+#mobilegames{
+	position:relative;
+	color:white;
+	text-align: left;
+	width:400px;
+
+}
+
+#gamedesign{
+	position:relative;
+	color:white;
+	text-align: left;
+	width:400px;
+	left:0px;
+}
+
+#helpfullinks{
+	position:relative;
+	color:white;
+	text-align: left;
+	width:400px;
+	left:0px;
+}
+
+.panelinfo{
+	position:relative;
+	color:white;
+	font-size: 1em;
+	font-family:'GillSans', san-serif;
+	text-align: left;
+}
+
+h3.panelheader{
+	right:0px;
+	font-size:2em;
+	color:white;
+	font-family:'HammersmithOne', 'arimoregular', san-serif;
+}
+
+.panelimage{
+	position:relative;
+	float:right;
+	border:20px;
+	margin:20px;
+	max-width:50%;
+	max-height:50%;
+	right:200px;
+	-webkit-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.35);
+	box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.35);
+}
+
+#busad1{
+	position:relative;
+	float:right;
+	top:500px;
+	left:700px;
+	max-width:20%;
+	max-height: 20%;
+	-webkit-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.35);
+	box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.35);
+}
+
+#busad2{
+	position:relative;
+	float:right;
+	top:450px;
+	left:600px;
+	max-width:20%;
+	max-height: 20%;
+	right:200px;
+	-webkit-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.35);
+	box-shadow: 6px 7px 5px 0px rgba(0,0,0,0.35);
+}
+
+#copyright{
+	font-family: 'GillSans', Arial, san-serif;
+}
+
+#portraitimage{
+	position:absolute;
+	margin:25px;
+	float:right;
+	right:650px;
+	top:50%;
+	z-index:10;
+	
+	
+}
