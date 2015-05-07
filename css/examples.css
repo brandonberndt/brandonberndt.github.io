@@ -390,7 +390,7 @@ p{
 	right:0px;
 	font-size:2em;
 	color:white;
-	font-family:'HammersmithOne', 'arimoregular', san-serif;
+	font-family:'HammersmithOne', 'GillSans', san-serif;
 }
 
 .panelimage{
@@ -433,9 +433,16 @@ p{
 
 #copyright{
 	position:relative;
+	display:inline;
 	padding:10px;
 	margin:5px;
 	font-family: 'GillSans', Arial, san-serif;
+}
+
+.printlinks li{
+	position:relative;
+	margin:5px;
+
 }
 
 #portraitimage{
