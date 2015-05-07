@@ -433,7 +433,7 @@ p{
 
 #copyright{
 	position:relative;
-	display:inline;
+	display:inline-block;
 	padding:10px;
 	margin:5px;
 	font-family: 'GillSans', Arial, san-serif;
