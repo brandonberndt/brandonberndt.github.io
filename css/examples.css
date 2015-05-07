@@ -379,7 +379,6 @@ p{
 }
 
 .panelinfo{
-	position:absolute;
 	color:white;
 	font-size: 1em;
 	font-family:'GillSans', san-serif;
@@ -433,7 +432,6 @@ p{
 
 #copyright{
 	position:relative;
-	display:block;
 	padding:10px;
 	margin:5px;
 	font-family: 'GillSans', Arial, san-serif;
