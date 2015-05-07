@@ -434,7 +434,8 @@ p{
 	position:relative;
 	text-align:left;
 	padding:10px;
-	margin:5px;
+	
+	bottom:10px;
 	font-family: 'GillSans', Arial, san-serif;
 }
 
