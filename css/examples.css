@@ -379,14 +379,14 @@ p{
 }
 
 .panelinfo{
-	position:relative;
+	position:absolute;
 	color:white;
 	font-size: 1em;
 	font-family:'GillSans', san-serif;
 	text-align: left;
 }
 
-h3.panelheader{
+.panelheader{
 	right:0px;
 	font-size:2em;
 	color:white;
@@ -432,6 +432,9 @@ h3.panelheader{
 }
 
 #copyright{
+	position:relative;
+	padding:10px;
+	margin:5px;
 	font-family: 'GillSans', Arial, san-serif;
 }
 
