@@ -148,7 +148,7 @@ body{
 	height:58px;
 }
 
-.aboutheader{
+.aboutheader h1{
 	position:fixed;
 	display:inline-block;
 	margin:20px;
@@ -160,7 +160,7 @@ body{
 	text-align: right;
 }
 
-h1.subheader{
+.subheader h1{
 	position:relative;
 	color:white;
 	font-family: 'GillSans', 'arimoregular', san-serif;
@@ -183,7 +183,7 @@ h1{
 
 }
 
-p.infoparagraph{
+.infoparagraph p{
 	font-family: 'GillSans', 'arimoregular', san-serif;
 	position:relative;
 	top:300px;
@@ -194,7 +194,7 @@ p.infoparagraph{
 	color:white;
 }
 
-p.description{
+.description p{
 	font-family: 'GillSans', 'arimoregular', san-serif;
 	position:relative;
 	top:;
@@ -435,7 +435,7 @@ p{
 	text-align:left;
 	padding:10px;
 	
-	bottom:10px;
+	bottom:50px;
 	font-family: 'GillSans', Arial, san-serif;
 }
 
